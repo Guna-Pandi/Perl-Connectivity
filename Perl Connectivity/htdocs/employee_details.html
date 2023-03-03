@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <title>Employee Details Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+        font-family: "Poppins", sans-serif;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--bg-color);
+        transition: 0.2s;
+        box-shadow: #353232 0px 7px 30px;
+      }
+      .logo {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 1rem;
+      }
+      .logo span {
+        font-size: 2rem;
+        font-weight: 600;
+        color: crimson;
+      }
+      .navbar {
+        display: flex;
+        margin-right: 2rem;
+        font-size: 2rem;
+        gap: 30px;
+      }
+      .navbar a:hover {
+        color: crimson;
+      }
+      .emp-form {
+        margin-top: 10rem;
+        display: grid;
+        place-items: center;
+      }
+      .emp-form form {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        color: black;
+        font-weight: 500;
+      }
+      form input {
+        padding: 15px;
+        border-radius: 0.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: hsla(260, 100%, 44%, 0.1);
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+      .sub-btn-k{
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+      .sub-btn-l{
+        background-image: linear-gradient(
+          to bottom right,
+          #ff5833d2,
+          rgb(252, 136, 106)
+        );
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 30%;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 12px;
+        box-shadow: #353232 0px 7px 30px
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  Section Start -->
+    <header>
+      <a class="logo">Enter <span> Employee </span>Details</a>
+
+      <ul class="navbar">
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <div class="emp-form">
+      <form method="post" action="/cgi-bin/employee_details.cgi">
+        <p class="p-tag">Name: <input type="text" name="name" /></p>
+        <p class="p-tag">Employee No: <input type="text" name="emp_no" /></p>
+        <p class="p-tag">Monthly Salary: <input type="text" name="salary" /></p>
+        <p class="p-tag">PAN Number: <input type="text" name="pan" /></p>
+        <p class="p-tag">Password: <input type="password" name="password" /></p>
+        <div class="sub-btn-k">
+        <input type="submit" value="Submit"  class="sub-btn-l"/>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>

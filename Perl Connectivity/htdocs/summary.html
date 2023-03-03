@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+        font-family: "Poppins", sans-serif;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--bg-color);
+        transition: 0.2s;
+        box-shadow: #353232 0px 7px 30px;
+      }
+      .logo {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 1rem;
+      }
+      .logo span {
+        font-size: 2rem;
+        font-weight: 600;
+        color: crimson;
+      }
+      .navbar {
+        display: flex;
+        margin-right: 2rem;
+        font-size: 2rem;
+        gap: 30px;
+      }
+      .navbar a:hover {
+        color: crimson;
+      }
+      .summary-view {
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .summary-view-link {
+        background-image: linear-gradient(
+          to bottom right,
+          #ff5833d2,
+          rgb(252, 136, 106)
+        );
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 10px;
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+        box-shadow: #353232 0px 7px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  Section Start -->
+    <header>
+      <a class="logo">Employee<span> Summary </span>Details</a>
+
+      <ul class="navbar">
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <div class="summary-view">
+      <a href="/cgi-bin/summary.cgi" class="summary-view-link">View Summary</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <title>Login Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+        font-family: "Poppins", sans-serif;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--bg-color);
+        transition: 0.2s;
+        box-shadow: #353232 0px 7px 30px;
+      }
+      .logo {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 1rem;
+      }
+      .logo span {
+        font-size: 2rem;
+        font-weight: 600;
+        color: crimson;
+      }
+      .navbar {
+        display: flex;
+        margin-right: 2rem;
+        font-size: 2rem;
+        gap: 30px;
+      }
+      .navbar a:hover {
+        color: crimson;
+      }
+
+      .contact-form {
+        display: grid;
+        place-items: center;
+        margin-top: 10rem;
+      }
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        color: black;
+        font-weight: 500;
+      }
+      form input {
+        padding: 15px;
+        border-radius: 0.5rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: hsla(260, 100%, 44%, 0.1);
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+      .sub-btn-n {
+        text-align: center;
+      }
+      .sub-btn {
+        background-image: linear-gradient(
+          to bottom right,
+          #ff5833d2,
+          rgb(252, 106, 106)
+        );
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 30%;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 12px;
+        box-shadow: #353232 0px 7px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  Section Start -->
+    <header>
+      <a class="logo">LOGIN<span> FORM</span></a>
+
+      <ul class="navbar">
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guna-Pandi?tab=repositories"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <!-- Navbar Section End -->
+    <div class="contact-form">
+      <form action="/cgi-bin/verification.cgi" method="post">
+        <label for="user_id">PAN Number:</label>
+        <input type="text" id="user_id" name="user_id" required /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required /><br /><br />
+        <div class="sub-btn-n">
+          <input type="submit" value="Submit" class="sub-btn" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
